@@ -1,0 +1,9 @@
+1.  failed to push some refs to git
+    解决： 可以通过如下命令进行代码合并【注：pull=fetch+merge]
+          git pull --rebase origin master
+           
+2.  atal: remote origin already exists
+    解决：先删除远程 Git 仓库
+         $ git remote rm origin
+         再添加远程 Git 仓库
+         $ git remote add origin git@github.com:FBing/java-code-generator
